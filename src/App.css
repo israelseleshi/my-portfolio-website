@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container for the app content */
+.container {
+  padding-top: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #343a40;
+  color: white;
+  height: 100vh;
+  padding-top: 20px;
+  width: 250px;
+  position: fixed;
+}
+
+.sidebar .nav-link {
+  color: white !important;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+/* Light/Dark Mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: white;
+}
+
+body.dark-mode .container {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode .sidebar {
+  background-color: #212529;
+}
+
+/* Button Custom Styles */
+button {
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
